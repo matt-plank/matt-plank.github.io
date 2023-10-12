@@ -2,12 +2,15 @@ import { AiFillEye } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import Card from "./components/card";
 import ContactIcons from "./components/contactIcons";
+import NavBar from "./components/nav/navbar";
 
 function App() {
   return (
     <>
+      <NavBar />
+
       <div className="flex flex-col gap-5">
-        <div className="h-16"></div>
+        <div className="h-8"></div>
 
         <h1 className="font-black text-gray-800 text-5xl text-center">
           Matt <br className="md:hidden" />
