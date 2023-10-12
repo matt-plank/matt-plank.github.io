@@ -1,13 +1,13 @@
 import { AiFillEye } from "react-icons/ai";
-import { FaGithub, FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 import Card from "./components/card";
+import ContactIcons from "./components/contactIcons";
 
 function App() {
   return (
     <>
       <div className="flex flex-col gap-5">
-        <div className="h-28"></div>
+        <div className="h-16"></div>
 
         <h1 className="font-black text-gray-800 text-5xl text-center">
           Matt <br className="md:hidden" />
@@ -17,13 +17,9 @@ function App() {
           Full Stack Engineer
         </h2>
 
-        <div className="flex justify-center gap-5">
-          <FaGithubSquare className="cursor-pointer text-4xl text-gray-800" />
-          <MdEmail className="cursor-pointer text-4xl text-gray-800" />
-          <FaLinkedin className="cursor-pointer text-4xl text-gray-800" />
-        </div>
+        <ContactIcons />
 
-        <div className="h-28"></div>
+        <div className="h-16"></div>
       </div>
 
       <div className="flex flex-wrap gap-10 justify-center">
