@@ -52,7 +52,7 @@ const Home = () => {
             track their progress over time.
           </p>
 
-          <p>
+          <p className="text-lg">
             On top of a{" "}
             <a
               className="text-red-700"
