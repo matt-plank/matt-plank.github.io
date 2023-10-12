@@ -14,7 +14,7 @@ function App() {
           Plank
         </h1>
         <h2 className="text-gray-800 text-2xl text-center">
-          Full Stack Engineer
+          Full Stack Software Engineer
         </h2>
 
         <ContactIcons />
