@@ -1,4 +1,4 @@
-import { AiFillEye } from "react-icons/ai";
+import { BsGlobeAmericas } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import Card from "../components/card";
 import ContactIcons from "../components/contactIcons";
@@ -110,7 +110,7 @@ const Home = () => {
               rel="noreferrer"
               className="px-4 py-2 bg-gray-800 text-white rounded-md"
             >
-              <AiFillEye className="inline-block mb-1 text-xl" /> Demo
+              <BsGlobeAmericas className="inline-block mb-1 text-xl" /> Live
             </a>
             <a
               href="https://github.com/matt-plank/jiu-jitsu-notes-api"
