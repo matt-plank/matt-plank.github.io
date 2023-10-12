@@ -28,10 +28,80 @@ const Home = () => {
       <div className="flex flex-wrap gap-10 justify-center">
         <Card img="https://images.pexels.com/photos/5616809/pexels-photo-5616809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
           <h3 className="font-bold text-2xl">Jiu Jitsu Notes</h3>
+
           <p className="text-lg">
-            A note taking app for Jiu Jitsu practitioners to keep track of their
-            training.
+            A{" "}
+            <a
+              className="text-red-700"
+              href="https://react.dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              React
+            </a>{" "}
+            &{" "}
+            <a
+              className="text-red-700"
+              href="https://vitejs.dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Vite
+            </a>{" "}
+            app I built & maintain for Jiu Jitsu athletes to study the sport and
+            track their progress over time.
           </p>
+
+          <p>
+            On top of a{" "}
+            <a
+              className="text-red-700"
+              href="https://www.python.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Python
+            </a>{" "}
+            &{" "}
+            <a
+              className="text-red-700"
+              href="https://www.djangoproject.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Django
+            </a>{" "}
+            back-end, the app is deployed automatically using{" "}
+            <a
+              className="text-red-700"
+              href="https://github.com/features/actions"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Actions
+            </a>{" "}
+            /{" "}
+            <a
+              className="text-red-700"
+              href="https://pages.github.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pages
+            </a>
+            , as well as{" "}
+            <a
+              className="text-red-700"
+              href="https://www.heroku.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Heroku
+            </a>{" "}
+            for a fast and scalable design.
+          </p>
+
+          <br />
 
           <div className="flex flex-wrap gap-2">
             <a
