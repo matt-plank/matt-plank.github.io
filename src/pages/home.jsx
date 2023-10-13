@@ -1,5 +1,7 @@
 import { BsGlobeAmericas } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { MdOutlineArticle } from "react-icons/md";
+import { Link } from "react-router-dom";
 import Card from "../components/card";
 import ContactIcons from "../components/contactIcons";
 import NavBar from "../components/nav/navbar";
@@ -10,7 +12,7 @@ const Home = () => {
       <NavBar />
 
       <div className="flex flex-col gap-5">
-        <div className="h-8"></div>
+        <div />
 
         <h1 className="font-black text-gray-800 text-5xl text-center">
           Matt <br className="md:hidden" />
@@ -128,6 +130,12 @@ const Home = () => {
             >
               <FaGithub className="inline-block mb-1 text-xl" /> Frontend
             </a>
+            <Link
+              to="/articles/jiu-jitsu-notes"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+            >
+              <MdOutlineArticle className="inline-block mb-1 text-xl" /> Article
+            </Link>
           </div>
         </Card>
       </div>
