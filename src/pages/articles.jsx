@@ -12,7 +12,7 @@ const Articles = () => {
         </h1>
 
         <div className="flex flex-col gap-5 items-center">
-          <div className="w-full max-w-md p-5">
+          <div className="w-full max-w-2xl p-5">
             <Link to="/articles/jiu-jitsu-notes">
               <div className="flex justify-between">
                 <h2 className="font-bold hover:underline text-gray-800 cursor-pointer text-lg">
