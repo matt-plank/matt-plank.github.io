@@ -1,9 +1,7 @@
-import moment from "moment";
 import { Link } from "react-router-dom";
-import { attributes } from "../articles/jiu-jitsu-notes.md";
 import NavBar from "../components/nav/navbar";
 
-const Articles = () => {
+const Articles = ({ articles }) => {
   return (
     <>
       <NavBar />
@@ -14,20 +12,24 @@ const Articles = () => {
         </h1>
 
         <div className="flex flex-col gap-5 items-center">
-          <div className="w-full max-w-2xl p-5">
-            <Link to="/articles/jiu-jitsu-notes">
-              <div className="flex justify-between">
-                <h2 className="font-bold hover:underline text-gray-800 cursor-pointer text-lg">
-                  {attributes.title}
-                </h2>
+          {[...articles]
+            .sort((a, b) => b.attributes.date.diff(a.attributes.date))
+            .map((article, i) => (
+              <div className="w-full max-w-2xl p-5" key={i}>
+                <Link to={`/articles/${article.slug}`}>
+                  <div className="flex justify-between">
+                    <h2 className="font-bold hover:underline text-gray-800 cursor-pointer text-lg">
+                      {article.attributes.title}
+                    </h2>
 
-                <h2 className="text-lg text-gray-500">
-                  {moment(attributes.date).format("DD/MM/YYYY")}
-                </h2>
+                    <h2 className="text-lg text-gray-500">
+                      {article.attributes.date.format("DD/MM/YYYY")}
+                    </h2>
+                  </div>
+                </Link>
+                <p>{article.attributes.description}</p>
               </div>
-            </Link>
-            <p>{attributes.description}</p>
-          </div>
+            ))}
         </div>
       </div>
     </>
