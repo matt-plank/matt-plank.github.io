@@ -1,4 +1,6 @@
+import moment from "moment";
 import { Link } from "react-router-dom";
+import { attributes } from "../articles/jiu-jitsu-notes.md";
 import NavBar from "../components/nav/navbar";
 
 const Articles = () => {
@@ -16,19 +18,15 @@ const Articles = () => {
             <Link to="/articles/jiu-jitsu-notes">
               <div className="flex justify-between">
                 <h2 className="font-bold hover:underline text-gray-800 cursor-pointer text-lg">
-                  Jiu Jitsu Notes
+                  {attributes.title}
                 </h2>
 
-                <h2 className="text-lg text-gray-500">13/10/2023</h2>
+                <h2 className="text-lg text-gray-500">
+                  {moment(attributes.date).format("DD/MM/YYYY")}
+                </h2>
               </div>
             </Link>
-            <p>
-              In this article I&apos;ll discuss what{" "}
-              <a href="https://jiujitsunotes.com/" className="text-red-700">
-                Jiu Jitsu Notes
-              </a>{" "}
-              is, how it works, and the science behind it.
-            </p>
+            <p>{attributes.description}</p>
           </div>
         </div>
       </div>

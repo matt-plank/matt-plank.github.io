@@ -1,0 +1,12 @@
+.article {
+    h2 {
+        font-weight: 900;
+        color: rgb(31 41 55);
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    a {
+        color: rgb(185 28 28);
+    }
+}
