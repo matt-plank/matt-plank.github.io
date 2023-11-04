@@ -6,6 +6,8 @@ import Card from "../components/card";
 import ContactIcons from "../components/contactIcons";
 import NavBar from "../components/nav/navbar";
 
+import SteakProjectBannerImage from "../images/steak-project.jpg";
+
 const Home = () => {
   return (
     <>
@@ -136,6 +138,58 @@ const Home = () => {
             >
               <MdOutlineArticle className="inline-block mb-1 text-xl" /> Article
             </Link>
+          </div>
+        </Card>
+
+        <Card img={SteakProjectBannerImage}>
+          <h3 className="font-bold text-2xl">The Steak Project</h3>
+
+          <p className="text-lg">
+            A React & Next.js app built to help cook steaks with statistical
+            models.
+          </p>
+
+          <p className="text-lg">
+            The back-end is implemented with Python & FastAPI, supported by an
+            additional model training service using scikit-learn. Data is stored
+            persistently with MongoDB.
+          </p>
+
+          <br />
+
+          <div className="flex flex-wrap gap-2">
+            <a
+              href="https://thesteakproject.com"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+            >
+              <BsGlobeAmericas className="inline-block mb-1 text-xl" /> Live
+            </a>
+            <a
+              href="https://github.com/matt-plank/steak-project-api"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+            >
+              <FaGithub className="inline-block mb-1 text-xl" /> API
+            </a>
+            <a
+              href="https://github.com/matt-plank/steak-project-web"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+            >
+              <FaGithub className="inline-block mb-1 text-xl" /> Frontend
+            </a>
+            <a
+              href="https://github.com/matt-plank/steak-project-model-service"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+            >
+              <FaGithub className="inline-block mb-1 text-xl" /> Model Service
+            </a>
           </div>
         </Card>
       </div>
